@@ -40,7 +40,7 @@ client.on("messageCreate", async message => {
       return message.reply("Please reply target message.")
     }
     const msg = await message.channel.messages.fetch(message.reference.messageId)
-    if(!row || !col){
+    if(row == undefined || col == undefined){
       return message.reply("Unknown args")
     }
     await msg.clickButton({ row: row, col: col })
