@@ -62,14 +62,20 @@ client.on("messageCreate", async message => {
   if(!embed || !embed.description){
     return;
   }
-  if(embed.description.match(/120秒/)){
+  if(embed.description.match(/\[マクロ検知/)){
+    console.error("検知")
     let list = [];
     const length = message.components[0].components.length
     for(let i=0;i<length;i++){
       list.push(message.components[0].components[i].label)
     }
-    const col = list.indexOf("No ")
-    await message.clickButton({ row: 0, col: col })
+    let col = list.indexOf("No ")
+    if(col == -1){
+      col = list.indexOf("違う")
+    }
+    setTimeout(async function(){
+      await message.clickButton({ row: 0, col: col })
+    },1000)
   }
 });
 
