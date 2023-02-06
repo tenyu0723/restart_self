@@ -20,4 +20,4 @@
 #### [.env]
 |場所|やること|
 |----|----|
-|TOKEN|Selfを動かしたいアカウントのtokenをペースト(https://shunshun94.github.io/shared/sample/discordAccountToken)|
+|TOKEN|Selfを動かしたいアカウントのtokenをペースト<br>やり方:https://shunshun94.github.io/shared/sample/discordAccountToken|
