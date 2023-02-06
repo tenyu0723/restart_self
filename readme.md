@@ -17,3 +17,7 @@
 |10行目|idsの中の要素を削除して自分のidを入れてください、その中に入っているidの人だけコマンドが反応します|
 |60行目|message.channel.id != "XXXXX"の部分のidを自動解除を反応させたいチャンネルのidに変更してください|
 
+#### [.env]
+|場所|やること|
+|----|----|
+|TOKEN|Selfを動かしたいアカウントのtokenをペースト(https://shunshun94.github.io/shared/sample/discordAccountToken)|
